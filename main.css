@@ -1,0 +1,12 @@
+img {
+    margin-top: 20px;
+    /* width: 500px !important;
+    height: 150px!important; */
+}
+
+.col {
+    border-top: 1px solid #969090;
+    border-right: 1px solid #969090;
+    border-bottom: 1px solid #969090;
+    border-left: 1px solid #969090;
+}
