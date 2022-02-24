@@ -7,13 +7,18 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a580189643.js" crossorigin="anonymous"></script>
 
     <script src='main.js'></script>
 </head>
 
 <body>
+    <br>
+    <br>
     <h1 class="text-center">Mi Challange</h1>
 
 
@@ -25,34 +30,93 @@
         <div class="row">
             <div class="col">
 
-                <img src="https://i.ibb.co/TT0Wt1c/image.png" class="img-fluid" alt="...">
+                <img src="https://i.ibb.co/TT0Wt1c/image.png" class="img-fluid" alt="imagen1">
                 <p> El concepto de imagen tiene su origen en el latín imāgo y permite describir a la figura.</p>
-                <input type="text" placeholder="1"> Column 1
+                <div class="cart-menu align-items-center d-flex">
+                    <div class="sidebar-social">
+                        <a class="cart" rel="nofollow"> <img class="iconImage" src="eye-solid.svg">
+                            <span id="cart_menu_num" data-action="cart-can" class="badge rounded-circle see1">0</span>
+                        </a>
+                    </div>
+                </div>Column 1
 
 
             </div>
             <div class="col">
-                <img src="https://i.ibb.co/TT0Wt1c/image.png" class="img-fluid" alt="...">
+                <img data-toggle="modal" data-target="#exampleModal2" onclick="cambiarVista('see2');" src="https://i.ibb.co/TT0Wt1c/image.png" class="img-fluid" alt="imagen2">
                 <p> El concepto de imagen tiene su origen en el latín imāgo y permite describir a la figura.</p>
-                <input type="text" placeholder="1">Column 2
+                <div class="cart-menu align-items-center d-flex">
+                    <div class="sidebar-social">
+                        <a class="cart" rel="nofollow"> <img class="iconImage" src="eye-solid.svg">
+                            <span id="cart_menu_num" data-action="cart-can" class="badge rounded-circle see2">0</span>
+                        </a>
+                    </div>
+                </div>Column 2
             </div>
             <div class="col">
-                <img src="https://i.ibb.co/TT0Wt1c/image.png" class="img-fluid" alt="...">
+                <img src="https://i.ibb.co/TT0Wt1c/image.png" class="img-fluid" alt="imagen3">
                 <p> El concepto de imagen tiene su origen en el latín imāgo y permite describir a la figura.</p>
-                <input type="text" placeholder="1"> Column 3
+                <div class="cart-menu align-items-center d-flex">
+                    <div class="sidebar-social">
+                        <a class="cart" rel="nofollow"> <img class="iconImage" src="eye-solid.svg">
+                            <span id="cart_menu_num" data-action="cart-can" class="badge rounded-circle">0</span>
+                        </a>
+                    </div>
+                </div> Column 3
             </div>
             <div class="col">
-                <img src="https://i.ibb.co/TT0Wt1c/image.png" class="img-fluid" alt="...">
+                <img data-toggle="modal" data-target="#exampleModal4" onclick="cambiarVista('see4');" src="https://i.ibb.co/PW3xLTh/image.png" class="img-fluid" alt="imagen4">
                 <p> El concepto de imagen tiene su origen en el latín imāgo y permite describir a la figura.</p>
-                <input type="text" placeholder="1"> Column 4
+                <div class="cart-menu align-items-center d-flex">
+                    <div class="sidebar-social">
+                        <a class="cart" rel="nofollow"> <img class="iconImage" src="eye-solid.svg">
+                            <span id="cart_menu_num" data-action="cart-can" class="badge rounded-circle see4">0</span>
+                        </a>
+                    </div>
+                </div> Column 4
             </div>
             <div class="col">
-                <img src="https://i.ibb.co/TT0Wt1c/image.png" class="img-fluid" alt="...">
+                <img src="https://i.ibb.co/TT0Wt1c/image.png" class="img-fluid" alt="imagen5">
                 <p> El concepto de imagen tiene su origen en el latín imāgo y permite describir a la figura.</p>
-                <input type="text" placeholder="1"> Column 5
+                <div class="cart-menu align-items-center d-flex">
+                    <div class="sidebar-social">
+                        <a class="cart" rel="nofollow">
+                            <img class="iconImage" src="eye-solid.svg">
+                            <span id="cart_menu_num" data-action="cart-can" class="badge rounded-circle">0</span>
+                        </a>
+                    </div>
+                </div> Column 5
             </div>
         </div>
     </div>
+
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header"></div>
+
+                <img src="https://i.ibb.co/TT0Wt1c/image.png" class="img-fluid" alt="imagen1">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal  4-->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header"></div>
+
+                <img src="https://i.ibb.co/PW3xLTh/image.png" class="img-fluid" alt="imagen1">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
 
 </body>
 
